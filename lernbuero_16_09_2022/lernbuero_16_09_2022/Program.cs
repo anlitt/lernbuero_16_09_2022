@@ -11,29 +11,29 @@ namespace lernbuero_16_09_2022
         static void Main(string[] args)
         {
             {
-                //sagt wieder das 13 plätze im string array sind 
-                string[] namen = new string[13];
-                //sagt welche namen drin sind und weist dementspreechend viele plätze zu
-                string[] namen2 = new string[] {"lukas", "jonas", "mona", "marie", "philip","jan",
-                "erwin", "leon" ,"marcello", "robin", "johannes", "andreas",
-                "robert"
-                };
-                
-                for(int i = 0; i < namen2.Length; i++)
+                int zahl = Convert.ToInt16(Console.ReadLine());
+                switch (zahl)
+                //funktioniert mit strings und ints 
+                //ist wie if und else
                 {
-                    namen2[i] += " 123";
-                    Console.WriteLine(namen2[i]);
+                    case 1:
+                    //if
+                        Console.WriteLine("Die Zahl ist 1");
+                        break;
+                    case 2:
+                    //if else
+                        Console.WriteLine("Die Zahl ist 2");
+                        break ;
+                    case 5:
+                    //if else
+                        Console.WriteLine("Die Zahl ist 5");
+                        break;
+                    default:
+                    //else
+                        Console.WriteLine("Kein Fall tritt ein");
+                        break;
                 }
-                
-                /*foreach(string trainee in namen2)
-                {
-                    //kann Trainee nicht als Michael funktionieren; ist technisch nicht möglich
-                    trainee = "Michael";
-                    Console.WriteLine(trainee);
-                }*/
-               
                 Console.ReadLine();
-
             }
         }
     }
